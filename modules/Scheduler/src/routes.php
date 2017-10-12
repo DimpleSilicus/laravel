@@ -13,10 +13,10 @@
  * @filesource
  */
 Route::group([
-//    'middleware' => [
-//        'web',
-//        'auth'
-//    ],
+    'middleware' => [
+        'web',
+        'auth'
+    ],
     
     'namespace' => 'Modules\Scheduler\Controller'
 ], function () {
