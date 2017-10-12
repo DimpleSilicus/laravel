@@ -1,0 +1,21 @@
+{
+    "name": "ToolKit",
+    "description": "ToolKit for project",
+    "keywords": ["SEO"],
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Ajay Bhosale",
+            "email": "ajay.bhosale@silicus.com"
+        }
+    ],
+    "require": {
+        "php": ">=5.4.0",
+        "illuminate/support": "5.1.*"
+    },
+    "autoload": {
+        "psr-4": {
+            "ToolKit\\": "src/"
+        }
+    }
+}
