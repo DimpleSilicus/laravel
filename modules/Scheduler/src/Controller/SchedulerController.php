@@ -51,6 +51,10 @@ class SchedulerController extends Controller
     {
         parent::__construct();
         $jsFiles[] = $this->url . 'theme/' . Config::get('app.theme') . '/assets/scheduler/js/scheduler.js';
+//        $jsFiles[]  = "https://cdn.rawgit.com/bpampuch/pdfmake/0.1.18/build/vfs_fonts.js";
+//        $jsFiles[]  = "https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css";
+//        $jsFiles[]  = "https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js";
+//        $jsFiles[]  = "https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js";
 //        print_r($jsFiles);
         $cssFiles[] = "";
         $this->loadJsCSS($jsFiles, $cssFiles);
