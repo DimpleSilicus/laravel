@@ -73,7 +73,7 @@
                                 <h5>Scheduler Interval *</h5>
                                 
                                 <div class="input-group width-100Per">
-                                    <select class="form-control has-info" id="gedcom" name="schedulerType" onchange="GetGedAmount(this.value)" placeholder="Placeholder">
+                                    <select class="form-control has-info" id="gedcom" name="schedulerType" onchange="GetSchedulerTime(this.value)" placeholder="Placeholder">
                                         <option selected="selected" value="">Select Interval</option>                                        
                                         <option value="daily">Daily</option>
                                         <option value="weekly">Weekly</option>
@@ -85,18 +85,12 @@
                                     <span class="form-bar"></span>
                                   	<span class="text-danger" id="filename-div"><strong id="form-errors-filename"></strong>
                                 </div>
-                                <h5>Scheduler Time *</h5>
+                                <div id="schedulerDate">
+                                    <h5>Scheduler Time *</h5>
+                                </div>
                                 
-                                <div class="input-group">
-                                    <input type="text" class="form-control" id="schedulerDate" name="schedulerDate" />
-                                        <span class="form-highlight"></span>
-                                        <span class="form-bar"></span>
-                                        <label class="hasdrodown" for="personDob">Date</label>
-                                        <label class="input-group-addon modal-datepicker-ico" for="schedulerDate">
-                                            <span class="glyphicon glyphicon-th"></span>
-                                        </label>
-                                         <span class="text-danger" id="personEvents-div"><strong id="form-errors-personEvents"></strong>
-                                </div>                                   
+                                
+                                                              
                                     
                                     <!--file uploader form end here-->
                                 </div>
