@@ -12,6 +12,22 @@
  * @link       None
  * @filesource
  */
+
+Route::group([
+    'middleware' => [
+        'web',
+        'guest'
+    ],
+    'namespace' => 'Modules\Scheduler\Controller'
+], function () {
+    // Route::get('/login', 'Auth\LoginController@showLoginForm');
+    
+    
+    Route::get('/', 'SchedulerController@showMainPage');
+    //Route::post('/login', 'Auth\LoginController@login');
+    Route::get('home', 'SchedulerController@showHomePage');
+    
+});
 Route::group([
     'middleware' => [
         'web',
@@ -21,16 +37,6 @@ Route::group([
     'namespace' => 'Modules\Scheduler\Controller'
 ], function () {
     
-//    Route::get('profiles/mynetwork', 'ProfileController@getMyNetwork');
-//    // reqests realted to Request Recived section
-//    Route::post('profiles/searchPepole', 'ProfileController@searchPeopleByNameAjax');
-//    Route::post('profiles/addUserRequestToConnect', 'ProfileController@addUserRequestToConnect');
-//    Route::post('profiles/approveUserRequest', 'ProfileController@approveRejectUserRequest');
-//    Route::post('profiles/rejectUserRequest', 'ProfileController@approveRejectUserRequest');
-//    Route::post('profiles/listUserRequest', 'ProfileController@getUserRequestReceived');
-//    Route::post('profiles/deleteUserSuggestion', 'ProfileController@deleteSuggestion');
-//    Route::get('profiles/deleteSuggestList', 'ProfileController@DeleteSuggestionList');
-
-    Route::get('showHomePage', 'SchedulerController@showHomePage');
+    Route::get('home', 'SchedulerController@showHomePage');
     
 });

@@ -1,8 +1,12 @@
 
 
 $(document).ready(function () {
-	alert('hello');
+	console.log('hello');
 });
 
 
 
+function addScheduler()
+{
+    alert('addScheduler');
+}

@@ -25,6 +25,7 @@ use Illuminate\Support\Facades\DB;
 
 use Modules\Scheduler\Model\Scheduler;
 
+use Illuminate\Foundation\Auth\AuthenticatesUsers;
 use Modules\ToolKit\Workshop;
 
 /**
@@ -40,7 +41,7 @@ use Modules\ToolKit\Workshop;
  */
 class SchedulerController extends Controller
 {
-
+     use AuthenticatesUsers;
     /**
      * Create a new controller instance.
      *
@@ -70,22 +71,10 @@ class SchedulerController extends Controller
         return view('Scheduler::scheduler_home');
         
     }
-  
-    /**
-     * This function is used to get user online status
-     *
-     * @name userStatus
-     * @access public
-     * @author Swapnil Patil <swapnilj.patil@silicus.com>
-     *
-     * @return void
-     */
-//    public function userStatus(Request $request)
-//    {        
-//        $onlineStatus = array();
-//        $onlineStatus = User::userOnlineStatus();        
-//        return response()->json($onlineStatus);
-//    }
     
+    public function showMainPage()
+    {
+        return view($this->theme . '.auth.login');
+    }
     
 }

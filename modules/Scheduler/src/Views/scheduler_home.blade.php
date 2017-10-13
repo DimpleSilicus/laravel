@@ -6,7 +6,7 @@
 <div class="container">
   <h2>Scheduler Details</h2>
   
-  <a href="#"><span class="glyphicon glyphicon-plus"></span>add scheduler</a>
+  <a href="#" onclick="addScheduler();"><span class="glyphicon glyphicon-plus" ></span>add scheduler</a>
   
   <table class="table">
     <thead>
