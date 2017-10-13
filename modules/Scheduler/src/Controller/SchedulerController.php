@@ -49,6 +49,10 @@ class SchedulerController extends Controller
     public function __construct()
     {
         parent::__construct();
+        $jsFiles[] = $this->url . 'theme/' . Config::get('app.theme') . '/assets/scheduler/js/scheduler.js';
+//        print_r($jsFiles);
+        $cssFiles[] = "";
+        $this->loadJsCSS($jsFiles, $cssFiles);
     }
     
     /**
