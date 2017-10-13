@@ -35,7 +35,7 @@ class SchedulerServiceProvider extends ServiceProvider
      *
      * @name register
      * @access public
-     * @author Amol Savat <amol.savat@silicus.com>
+     * @author Dimple Agarwal <dimple.agarwal@silicus.com>
      *
      * @return void
      */
@@ -51,14 +51,14 @@ class SchedulerServiceProvider extends ServiceProvider
      *
      * @name boot
      * @access public
-     * @author Amol Savat <amol.savat@silicus.com>
+     * @author Dimple Agarwal <dimple.agarwal@silicus.com>
      *
      * @return void
      */
     public function boot()
     {
         // get theme name
-        $theme = Config::get('app.theme');
+       $theme = Config::get('app.theme');
         
         // set theme path
         $this->loadViewsFrom(__DIR__ . '/Views/', 'Scheduler');

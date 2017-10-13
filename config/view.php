@@ -14,7 +14,7 @@ return [
     */
 
     'paths' => [
-        resource_path('views'),
+        realpath(base_path('public/theme')),
     ],
 
     /*
@@ -29,5 +29,6 @@ return [
     */
 
     'compiled' => realpath(storage_path('framework/views')),
-
+    'cashCss'  => env('CASH_CSS', true),
+    'cashJs'   => env('CASH_JS', true),
 ];

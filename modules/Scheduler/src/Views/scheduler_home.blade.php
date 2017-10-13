@@ -1,8 +1,13 @@
+@extends($theme.'.layouts.app')
+
+@section('content')
 <h3>Hello Scheduler</h3>
 
 <div class="container">
-  <h2>Basic Table</h2>
-  <p>The .table class adds basic styling (light padding and only horizontal dividers) to a table:</p>            
+  <h2>Scheduler Details</h2>
+  
+  <a href="#"><span class="glyphicon glyphicon-plus"></span>add scheduler</a>
+  
   <table class="table">
     <thead>
       <tr>
@@ -30,3 +35,4 @@
     </tbody>
   </table>
 </div>
+@endsection
