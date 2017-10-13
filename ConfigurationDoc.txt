@@ -1,0 +1,96 @@
+@foreach($courses as $coursesList_Info)
+                                @php ($courseCe = $coursesList_Info['is_continuing_eduction'])
+                                @php ($courseRenewal = $coursesList_Info['is_renewal'])
+                                <option value="{{$coursesList_Info['id']}}" @if($enrollCourse == $coursesList_Info['id']) selected @endif is_ce="{{$coursesList_Info['is_continuing_eduction']}}" is_cpr="{{$coursesList_Info['is_cpr']}}" is_renewal="{{$coursesList_Info['is_renewal']}}">
+                                @if($courseCe) {{$coursesList_Info['parent_title']}} -CE
+                                @elseif($courseRenewal) {{$coursesList_Info['parent_title']}} -Renewal
+                                @else {{$coursesList_Info['title']}} @endif </option>
+                                @endforeach
+
+
+
+
+
+{{$coursesList_Info['is_cpr']}}
+
+
+composer update
+php artisan vendor:publish --force
+php artisan migrate 
+php artisan cache:clear
+php artisan config:clear
+php artisan config:cache
+php artisan view:clear
+composer dumpautoload
+
+
+'paypal' => [
+	'client_id' => 'AVSbZbw7g-cdc_q-RzY63n4nLIQQJ1MsU8UHrDU3bbBUWItz7hAbt1jBHxlh3UD2VZHB56TCUvbjPxCL',
+	'secret' => 'EC-rB97O5g2SHkOY-YpECsRUXXHHm9jIrj3XB9TivA5X-fL2HrHtQT1oKyEwI6P1iRyqIBE69v0Z4t-m'        
+    ]
+
+
+    DanielJHanson@jourrapide.com
+    Silicus@999
+
+Staging URL:
+34.212.145.200 development.genealogy.com
+
+Github account:
+DimpleSilicus
+dimple.agarwal@silicus.com
+Dimple2915
+
+Docker account:
+docker id: dimplesilicus
+email id: dimple.agarwal@silicus.com
+password: Dimple2915
+
+
+
+SELECT DISTINCT u.* FROM `users` as u
+JOIN user_network as un
+JOIN delete_suggestion as ds
+WHERE u.id!=un.receiver_id
+and u.id!= ds.suggestion_id
+AND un.sender_id=11
+
+//C:\Windows\System32\drivers\etc
+<VirtualHost *:80>
+  ServerAdmin dimple.agarwal@silicus.com
+  DocumentRoot "C:/wamp64/www/test"
+
+  <Directory "C:/wamp64/www/test">
+      Options Indexes FollowSymLinks MultiViews
+      AllowOverride All
+      Order deny,allow
+      Allow from all
+  </Directory>
+
+  ErrorLog ${APACHE_LOG_DIR}/error.log
+  CustomLog ${APACHE_LOG_DIR}/access.log combined
+
+</VirtualHost>
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
