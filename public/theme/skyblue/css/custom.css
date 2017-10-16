@@ -1,0 +1,452 @@
+/* your styles go here */
+/*forms*/
+.form-heading {
+    text-transform: uppercase;
+    border-bottom: solid 2px #5b4a42;
+    margin-bottom: 15px;
+    color: #95b43c;
+    padding-bottom: 5px;
+    font-weight: 500;
+}
+
+
+
+/*alignments*/
+.padding-10 {
+    padding: 10px;
+}
+
+.padding-30 {
+    padding: 30px;
+}
+
+.padding-LR-0 {
+    padding-left: 0px;
+    padding-right: 0px;
+}
+
+.padding-TB-10 {
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.padding-TB-20 {
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.padding-B-10 {
+    padding-bottom: 10px;
+}
+
+.padding-B-100 {
+    padding-bottom: 100px;
+}
+
+.margin-R-10 {
+    margin-right: 10px;
+}
+
+.margin-R-20 {
+    margin-right: 20px;
+}
+
+.margin-T-0 {
+    margin-top: 0px !important;
+}
+
+.margin-T-10 {
+    margin-top: 10px;
+}
+
+.margin-T-20 {
+    margin-top: 20px !important;
+}
+
+.margin-T-30 {
+    margin-top: 30px;
+}
+
+.margin-T-40 {
+    margin-top: 40px;
+}
+
+.margin-T-50 {
+    margin-top: 50px;
+}
+
+.margin-T-70 {
+    margin-top: 70px;
+}
+
+.margin-T-80 {
+    margin-top: 80px;
+}
+
+.margin-T-100 {
+    margin-top: 100px;
+}
+
+.margin-B-10 {
+    margin-bottom: 10px !important;
+}
+
+.margin-B-20 {
+    margin-bottom: 20px;
+}
+
+.margin-B-100 {
+    margin-bottom: 100px;
+}
+
+.margin-TB-0 {
+    margin-top: 0px !important;
+    margin-bottom: 0px !important;
+}
+
+.margin-TB-10 {
+    margin-top: 10px !important;
+    margin-bottom: 10px !important;
+}
+
+.margin-LR-15 {
+    margin-left: 15px;
+    margin-right: 15px;
+}
+
+.margin-T-30-visible-lg {
+    margin-top: 30px;
+}
+
+.top-0 {
+    top: 0 !important;
+}
+
+/*file upload forms control*/
+.upload-Gedcom-file .file-preview {
+    display: none;
+}
+
+.upload-Gedcom-file .file-caption-name {
+    height: 28px;
+    padding: 8px 10px 0 10px;
+}
+
+.upload-Gedcom-file .form-control, .upload-Gedcom-file .btn-default {
+    border-bottom: 0 !important;
+    border: 1px solid #d9d9d9 !important;
+}
+
+.upload-Gedcom-file .input-group-btn, .upload-Gedcom-file .input-group .form-control, .upload-Gedcom-file .input-group-addon, .form-inline .input-group {
+    display: table-cell;
+}
+
+.upload-Gedcom-file .btn-primary {
+    background: #95b43c;
+}
+
+    .upload-Gedcom-file .btn-primary:hover, .upload-Gedcom-file .btn-primary:focus {
+        background-color: #86a430;
+        box-shadow: none;
+        color: #ffffff;
+        border: none;
+    }
+
+.upload-Gedcom-file .btn-default {
+    border: none;
+}
+
+/*tab to accordion*/
+.responsiveTabs {
+    margin-top: 50px;
+}
+
+#gnhTab-accordion .panel-heading, #profileTab-accordion .panel-heading, #mapTab-accordion .panel-heading, #profileTab-accordion .panel-heading {
+    padding: 0;
+}
+
+    #gnhTab-accordion .panel-heading .panel-title > a.collapsed, #gnhTab-accordion .panel-heading .panel-title > a,
+    #profileTab-accordion .panel-heading .panel-title > a.collapsed, #profileTab-accordion .panel-heading .panel-title > a,
+    #mapTab-accordion .panel-heading .panel-title > a.collapsed, #mapTab-accordion .panel-heading .panel-title > a {
+        padding: 10px;
+        display: block;
+        font-size: 15px;
+        background: #626262;
+        color: #fff;
+        outline: none;
+        position: relative;
+    }
+
+    #gnhTab-accordion .panel-heading .panel-title > a, #profileTab-accordion .panel-heading .panel-title > a,
+    #mapTab-accordion .panel-heading .panel-title > a {
+        background: #5b4a42;
+    }
+
+.panel-default {
+    border-color: #ccc;
+}
+
+#gnhTab-accordion .panel-heading .panel-title > a.collapsed:after,
+#profileTab-accordion .panel-heading .panel-title > a.collapsed:after,
+.nested-accordion .panel-heading .panel-title > a.collapsed:after,
+#mapTab-accordion .panel-heading .panel-title > a.collapsed:after {
+    content: "\f067";
+    font-family: FontAwesome;
+    font-style: normal;
+    font-weight: normal;
+    text-decoration: inherit;
+    /*--adjust as necessary--*/
+    color: #fff;
+    font-size: 15px;
+    padding-right: 0.5em;
+    position: absolute;
+    top: 10px;
+    right: 5px;
+    z-index: 100;
+}
+
+#gnhTab-accordion .panel-heading .panel-title > a:after,
+#profileTab-accordion .panel-heading .panel-title > a:after,
+.nested-accordion .panel-heading .panel-title > a:after,
+#mapTab-accordion .panel-heading .panel-title > a:after {
+    content: "\f068";
+    font-family: FontAwesome;
+    font-style: normal;
+    font-weight: normal;
+    text-decoration: inherit;
+    /*--adjust as necessary--*/
+    color: #fff;
+    font-size: 15px;
+    padding-right: 0.5em;
+    position: absolute;
+    top: 10px;
+    right: 5px;
+    z-index: 100;
+}
+
+#gnhTab-accordion.panel-group .panel + .panel, #profileTab-accordion.panel-group .panel + .panel #mapTab-accordion.panel-group .panel + .panel {
+    margin-top: 2px;
+}
+/*nested accordion*/
+.nested-accordion .panel-heading .panel-title > a.collapsed:after {
+    color: #666;
+}
+
+/*all heading*/
+.sub-heading {
+    border-bottom: solid 1px #dbd9d8;
+    padding-bottom: 5px;
+    color: #95b43c;
+}
+
+/*tables*/
+.table > tbody > tr:last-child {
+    border-bottom: 1px solid #ddd;
+}
+
+a.table-icon .fa {
+    font-size: 17px;
+}
+
+a.table-icon:hover, a.modal-icon:hover i.fa {
+    border-bottom: none;
+    color: #95b43c;
+}
+
+    a.table-icon:hover .fa {
+        color: #95b43c;
+    }
+
+.table-responsive .table a {
+    color: #000;
+    text-decoration: underline;
+}
+
+    .table-responsive .table a:hover, .table-responsive .table a:focus, .green-text {
+        color: #95b43c;
+    }
+
+.table > tbody > tr > td {
+    vertical-align: middle;
+}
+
+#CreateGroup a {
+    color: #333;
+}
+
+/*width and height*/
+.width-100Per {
+    width: 100% !important;
+}
+
+.width-90Per {
+    width: 90% !important;
+}
+
+.min-height-450 {
+    min-height: 450px;
+}
+
+/*modal dialog*/
+.modal-ico-plus, .modal-ico-trash {
+    font-size: 22px;
+}
+
+.modal-title {
+    font-size: 24px;
+    text-align: center;
+    color: #95b43c;
+    text-transform: uppercase;
+}
+
+.modal-datepicker-ico, .search-ico {
+    margin-top: 23px;
+    cursor: pointer;
+    width: auto !important;
+    right: 0;
+    border-bottom: 1px solid #d9d9d9 !important;
+    padding-bottom: 8px;
+}
+
+.modal {
+    text-align: center;
+    padding: 0 !important;
+}
+
+    .modal:before {
+        content: '';
+        display: inline-block;
+        height: 100%;
+        vertical-align: middle;
+        margin-right: -4px;
+    }
+
+.modal-dialog {
+    display: inline-block;
+    text-align: left;
+    vertical-align: middle;
+}
+
+/*borders and style*/
+.gray-bdr {
+    border: solid 1px #ccc;
+}
+
+.border-bttm {
+    border-bottom: solid 1px #dbd9d8;
+}
+
+.border-bttm-dashed {
+    border-bottom: dashed 1px #999;
+}
+
+.right-bdr {
+    border-right: solid 1px #ebebeb;
+}
+
+.app-content .right-bdr {
+    border-right: 1px solid #dbd9d8;
+}
+
+.no-border, .no-border .table > tbody > tr > td, .table-responsive.no-border, .no-border .table > tbody > tr:last-child {
+    border: none !important;
+}
+
+
+
+/*colors*/
+.white-bg {
+    background-color: #ffffff;
+}
+.light-gray-bg {
+    background-color: #f1f1f1;
+}
+
+/*icons*/
+.fa.fa-power-off{
+    color: #d63419;
+}
+
+/*form controls*/
+textarea.form-control {
+    resize: none;
+}
+
+.radio-inputs label {
+    top: 0 !important;
+    margin-top: 5px !important;
+    color: #000;
+}
+
+/*profile page*/
+.card {
+    border: solid 1px #ccc;
+}
+
+.card-title {
+    margin: 0;
+    background-color: #eff1f3;
+    color: #95b43c;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 16px;
+    margin-bottom: 15px;
+}
+
+.alert {
+    padding: 10px 15px;
+}
+
+.alert-converstion {
+    color: #c5740c;
+    background-color: #f5e0c5;
+    border-color: #e9d0af;
+}
+
+/*google map*/
+.googleMapStyle {
+    width: 100%;
+    height: 845px;
+    background-color: #e5e3df;
+    margin-top: 30px;
+    margin-bottom: 20px;
+    padding: 2%;
+}
+
+@media(max-width: 1199px) {
+    .margin-T-30-visible-lg {
+        margin-top: 0px;
+    }
+}
+
+/*file upload*/
+a.fileinput-upload-button{
+ display:none;
+}
+
+/*mobile*/
+@media (max-width: 767px) {
+    /*app page*/
+    .app-content .right-bdr {
+        border-right: none;
+        border-bottom: 1px solid #dbd9d8;
+        margin-top: 20px;
+    }
+
+    .app-content .white-bg {
+        margin-left: 5px;
+        margin-right: 5px;
+    }
+
+    .modal-title {
+        font-size: 20px;
+    }
+}
+
+
+/*mozilla css*/
+@-moz-document url-prefix() {
+    .modal-datepicker-ico, .search-ico {
+        margin-top: 23px;
+    }
+}

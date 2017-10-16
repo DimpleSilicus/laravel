@@ -1,0 +1,63 @@
+/*
+@author: Shahrukh Khan
+@website: http://www.thesoftwareguy.in
+@date published: 19th December, 2013
+*/
+
+
+
+#container {
+   min-height:100%;
+   position:relative;
+}
+
+
+
+.copyright{float:left;padding:10px 0 0 20px; }
+.footerlogo{float:right;padding:10px 20px 0 0;}
+.resultRow{width:100%; margin:2px 0; border:1px solid #8D8D8D;padding:2px; color:#000;}
+.height10{clear:both;height:10px;}
+.height30{clear:both;height:30px;}
+
+.mainTitle{ font-size:35px; text-align:center; padding-bottom:20px;text-decoration:underline;}
+.title{ font-size:20px; padding:10px; text-align:center;}
+
+.links{border:1px solid #000; padding:5px; text-decoration:none;color:#000;}
+.links:hover{text-decoration:underline;color:#fff; background:#6D37B0;}
+.selected{border:1px solid #000; padding:5px; text-decoration:none;color:#fff; background:#6D37B0;}
+/****************************************************/
+
+table {
+    *border-collapse: collapse; /* IE7 and lower */
+    border-spacing: 0;
+    width: 100%;    
+}
+
+.bordered {
+    border: solid #ccc 1px;
+    -webkit-box-shadow: 0 1px 1px #ccc; 
+    -moz-box-shadow: 0 1px 1px #ccc; 
+    box-shadow: 0 1px 1px #ccc;         
+}
+
+.bordered td, .bordered th {
+    padding: 10px;
+    border-bottom: 1px solid #f2f2f2;    
+}
+
+.bordered th {
+	background-color: #eee;
+	border-top: none;
+}
+
+.bordered tbody tr:nth-child(even) {
+	background: #f5f5f5;
+	border:1px solid #000;
+		
+}
+
+.bordered tbody tr:hover td {
+	background: #d0dafd;
+	color: #339;
+}
+
